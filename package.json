@@ -1,0 +1,62 @@
+{
+  "name": "eslint-plugin-class-method-newlines",
+  "version": "0.0.1",
+  "description": "plugin for class-method-newlines eslint rule",
+  "main": "lib/index.js",
+  "files": [
+    "lib/",
+    "package.json",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "jest && prettier --check \"**/*.{ts,js,json,md}\" &&  eslint . --ext .ts",
+    "format": "prettier --write \"**/*.{ts,js,json,md}\"",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@typescript-eslint/utils": "^5.12.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.4.1",
+    "@types/estree": "^0.0.51",
+    "@types/jest": "^27.4.0",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "enhanced-resolve-jest": "^1.1.0",
+    "eslint": "^8.9.0",
+    "eslint-plugin-eslint-plugin": "^4.1.0",
+    "jest": "^27.5.1",
+    "prettier": "^2.5.1",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.5.5"
+  },
+  "peerDependencies": {
+    "eslint": "^8.0.0"
+  },
+  "resolutions": {
+    "enhanced-resolve": "^5.9.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "resolver": "<rootDir>/resolver.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kondi/eslint-plugin-class-method-newlines.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kondi/eslint-plugin-class-method-newlines/issues",
+    "email": "getify@gmail.com"
+  },
+  "homepage": "https://github.com/kondi/eslint-plugin-class-method-newlines",
+  "author": "Pusztai Tibor",
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "class-method-newlines",
+    "tslint-misc-rules"
+  ]
+}
